@@ -14,7 +14,7 @@ with open("docs/Changelog.rst", "r") as fh:
     long_description += fh.read()
 
 setup(
-    name="senaite.core.spotlight",
+    name="valer.core.spotlight",
     version=version,
     description="MacOS like Spotlight search",
     long_description=long_description,
@@ -29,9 +29,10 @@ setup(
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
     ],
     keywords="",
-    author="RIDING BYTES & NARALABS",
-    author_email="senaite@senaite.com",
-    url="https://github.com/senaite/senaite.core.spotlight",
+    author="Valer Group LLC",
+    author_email="valerio.zhang@valer.us",
+    url="https://github.com/valeriozhang/senaite.core.spotlight",
+    
     license="GPLv2",
     packages=find_packages("src", exclude=["ez_setup"]),
     package_dir={"": "src"},
@@ -40,8 +41,8 @@ setup(
     zip_safe=False,
     install_requires=[
         "setuptools",
-        "senaite.core",
-        "senaite.jsonapi",
+        "valer.core",
+        "valer.jsonapi",
     ],
     extras_require={
         "test": [
